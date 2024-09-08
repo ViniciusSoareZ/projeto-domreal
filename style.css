@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor0:#F6F6F6;
+    --cor1:#0F1C67;
+    --cor2:#6AA7D9;
+    --cor3:#96BAE1;
+}
+
+body{
+    
+    background-color: var(--cor0);
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/capa.png);
+    height: 270px;
+}
+header > img{
+    height: 236px;
+}
+
+section.intro{
+    
+    margin-top: 120px;
+    margin-left: 145px;
+}
+
+.intro > h1, h2{
+    color: var(--cor2);
+}
+
+section#btn{
+    padding: 100px;
+}
