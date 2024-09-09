@@ -13,13 +13,12 @@
 }
 
 body{
-    
+    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--cor0);
 }
 header{
     display: flex;
     justify-content: center;
-    align-items: center;
     background-image: url(img/capa.png);
     height: 270px;
 }
@@ -28,15 +27,38 @@ header > img{
 }
 
 section.intro{
-    
+    width: 1500px;
+    text-align: left;
     margin-top: 120px;
     margin-left: 145px;
 }
 
 .intro > h1, h2{
+    margin-bottom: 25px;
     color: var(--cor2);
+    margin-top: 50px;
 }
 
-section#btn{
-    padding: 100px;
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+.btn{
+    color: var(--cor2);
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px 20px;
+    border: solid 2px var(--cor2) ;
+    border-radius: 5px;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+.btn:hover{
+    background-color: var(--cor2);
+    color: var(--cor0);
+    transform: scale(1.1);
+
 }
