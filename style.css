@@ -3,6 +3,9 @@
 *{
     margin: 0px;
     padding: 0px;
+
+    
+    
 }
 
 :root{
@@ -12,10 +15,13 @@
     --cor3:#96BAE1;
 }
 
-body{
+html, body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--cor0);
+    
 }
+ 
+/* CABEÇALHO */
 header{
     display: flex;
     justify-content: center;
@@ -26,39 +32,163 @@ header > img{
     height: 236px;
 }
 
-section.intro{
-    width: 1500px;
-    text-align: left;
-    margin-top: 120px;
-    margin-left: 145px;
-}
 
-.intro > h1, h2{
-    margin-bottom: 25px;
-    color: var(--cor2);
-    margin-top: 50px;
-}
 
-a{
+
+/* APRESENTAÇÃO */
+div.apresentacao{
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-decoration: none;
+    position: relative;
+    background-color: var(--cor2);
+    background-image: url(img/teste2.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+    
+    color: var(--cor0);
+    height: 100vh;
+    
 }
+
+
+div#desc{
+    text-align: center;
+    font-weight: bold;
+    /* text-shadow: 2px 2px 0px black; */
+    position: absolute;
+    top: 20%;
+    left: 47%;
+    
+    
+   
+}
+div#desc > h1{
+    font-size: 60px;   
+}
+div#desc > p{
+    margin-top: 30px;
+    max-width: 630px;
+}
+#desc2{
+    margin-top: 50px; 
+}
+li{
+    list-style: disc;
+    margin-left: 10px;
+}
+/* BOTAO */
 
 .btn{
-    color: var(--cor2);
-    margin: auto;
-    margin-top: 40px;
-    padding: 10px 20px;
-    border: solid 2px var(--cor2) ;
+    font-weight: bold;
+    font-size: 1em;
+    background-image: url(img/teste2.png);
+    background-size: cover;
+    background-color:#5c7bb2;
+    color: var(--cor0);
+
+    margin-top: 50px;
+    padding: 20px 40px;
+    border: solid 2px var(--cor0) ;
     border-radius: 5px;
     transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
 }
-.btn:hover{
-    background-color: var(--cor2);
-    color: var(--cor0);
+ .btn:hover{
+    background-image: url(img/teste3.jpeg);
+    color: #254d93;
     transform: scale(1.1);
 
+} 
+/* CELULAR */
+section#telefone{
+    position: absolute;
+    height: 627px;
+    width: 311px;
+    
+
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+
+    background: url(img/iPhone-15-Black-2.png) no-repeat;
+    
 }
+
+iframe#tela{
+    position: relative;
+    top: 15px;
+    left: 16px;
+    width: 280px;
+    height: 598px;
+    border-radius:20px ;
+
+}
+
+@media screen and (max-width: 830px) {
+    div.apresentacao{
+        
+        flex-direction: column-reverse;
+        height: 1300px;
+    }
+
+    section#telefone{
+        
+        left: 50%;
+        top: 73%;
+    }
+
+    div#desc{
+        text-align: center;
+        top: 23%;
+        left:50%;
+        transform: translate(-50%, -50%);
+    }
+    .btn{
+        padding: 10px 20px;
+        margin-top: 30px;    
+    }
+    
+}
+
+/* QUEM SOMOS NOS */
+section.intro{
+    
+    margin: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+
+.intro > h1, h2{
+    font-size: 2em;
+    color: var(--cor2);
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+/* SERVIÇOS */
+section.servicos{
+    background-image: url(img/teste3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+    font-size: 1.8em;
+    text-align: center;
+    background-color: var(--cor2);
+}
+section.servicos > h1{
+    text-transform: uppercase;
+    color: var(--cor2);
+    padding: 100px;
+}
+.video-serv{
+    
+    border: 10px solid var(--cor3);
+    border-bottom: 80px solid var(--cor3); 
+    border-radius: 20px; 
+    margin-top: 50px;
+    
+    width: 320px;
+    height: 568px;
+    
+}
+
