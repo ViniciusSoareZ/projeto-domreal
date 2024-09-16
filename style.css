@@ -192,3 +192,69 @@ section.servicos > h1{
     
 }
 
+/* footer */
+footer{
+    
+    color: var(--cor0);
+    background-color: var(--cor1);
+    height: 900px;
+    
+    
+}
+section.infos{
+    display: flex;
+    justify-content: space-around;
+    
+    padding-top: 120px;
+
+}
+.container01{
+    position: relative;
+}
+.icons{
+    width: 20px;
+    height: 20px;
+}
+#contato-whats{
+    position: absolute;
+    top: 36px;
+    right: 205px;
+    
+    
+}
+#contato-insta{
+    position: absolute;
+    top: 66px;
+    right: 205px;
+}
+#contato-mail{
+    position: absolute;
+    top: 96px;
+    right: 205px;
+
+}
+dt{
+    
+    font-size: 1.5em;
+    font-weight: bold;
+}
+dd{
+    line-height: 30px;
+    margin-left: 25px;
+}
+
+#insta, #whats, #tiktok, #face{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.404);
+    width: 40px;
+    height: 40px;
+}
+
+.maps{
+    margin-left: 30px;
+    margin-top: 200px;
+}
+.maps > img{
+    width: 273px;
+    height: 168px;
+}
