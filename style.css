@@ -7,7 +7,10 @@
     
     
 }
-
+a{
+    text-decoration: none;
+    color: white;
+}
 :root{
     --cor0:#F6F6F6;
     --cor1:#0F1C67;
@@ -39,7 +42,7 @@ header > img{
 div.apresentacao{
     display: flex;
     position: relative;
-    background-color: var(--cor2);
+    
     background-image: url(img/teste2.png);
     background-repeat: no-repeat;
     background-size: cover; 
@@ -96,6 +99,7 @@ li{
     background-image: url(img/teste3.jpeg);
     color: #254d93;
     transform: scale(1.1);
+    cursor: pointer;
 
 } 
 /* CELULAR */
@@ -151,18 +155,33 @@ iframe#tela{
 
 /* QUEM SOMOS NOS */
 section.intro{
-    
-    margin: 50px;
-    margin-top: 100px;
     margin-bottom: 100px;
+    padding: 50px;
+    
+    background-image: url(img/dom-destaque-blue.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 25%;
+   
+    
     
 }
 
-.intro > h1, h2{
+
+.intro > h2{
     font-size: 2em;
     color: var(--cor2);
-    margin-top: 50px;
     margin-bottom: 25px;
+    margin-top: 25px;
+}
+.intro > h1{
+    color: var(--cor2);
+    font-size: 3.5em;
+    text-align: center;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
 }
 
 /* SERVIÇOS */
@@ -192,23 +211,25 @@ section.servicos > h1{
     
 }
 
+
 /* footer */
 footer{
     
     color: var(--cor0);
     background-color: var(--cor1);
-    height: 900px;
     
+    padding: 50px;
     
 }
 section.infos{
     display: flex;
-    justify-content: space-around;
-    
-    padding-top: 120px;
+    justify-content: space-between;
+    flex-wrap: wrap;    
 
 }
+
 .container01{
+    margin-top: 50px;
     position: relative;
 }
 .icons{
@@ -218,21 +239,51 @@ section.infos{
 #contato-whats{
     position: absolute;
     top: 36px;
-    right: 205px;
+    right: 207px;
     
     
 }
 #contato-insta{
     position: absolute;
     top: 66px;
-    right: 205px;
+    right: 207px;
 }
 #contato-mail{
     position: absolute;
     top: 96px;
-    right: 205px;
+    right: 207px;
 
 }
+.container02{
+    margin-top: 50px;
+    position: relative;
+}
+#loc1{
+    position: absolute;
+    top: 36px;
+    right: 170px;
+
+}
+#loc2{
+    position: absolute;
+    top: 66px;
+    right: 170px;
+
+}
+.container03{
+    margin-top: 50px;
+}
+
+.container04{
+    margin-top: 50px;
+    position: relative
+}
+#loc4{
+    position: absolute;
+    top: 33px;
+    right: 240px;
+
+} 
 dt{
     
     font-size: 1.5em;
@@ -243,18 +294,98 @@ dd{
     margin-left: 25px;
 }
 
-#insta, #whats, #tiktok, #face{
+.iconsredes{
+    margin-top: 5px;
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0.404);
+    background-color: #254d93;
     width: 40px;
-    height: 40px;
+    height: 40px;  
+    border-radius: 10px;
+    
+    position: relative;
+    
+}
+#insta{
+    position: absolute;
+    width: 30px;
+    height: 30px;   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+#whats{
+    position: absolute;
+    width: 30px;
+    height: 30px; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+#tiktok{
+    position: absolute;
+    width: 25px;
+    height: 25px; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#face{
+    position: absolute;
+    width: 35px;
+    height: 35px; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.iconsredes:hover{
+    background-color: var(--cor2);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+dd:hover{
+    color: var(--cor2);
+    
+}
+.selos{
+    width: 70px;
+    height: 28px;
+}
+.container05{
+    margin-top: 50px;
 }
 
-.maps{
-    margin-left: 30px;
-    margin-top: 200px;
+.container06 > img{
+    width: 200px;
+    height:161.4px;
+
+    text-align: center;
 }
-.maps > img{
-    width: 273px;
-    height: 168px;
+#direitos{
+    text-align: center;
 }
+
+
+
+
+
+
+
+/* .div-maps{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 50px;
+   
+}
+
+#logo-footer{
+   
+    
+    width: 300px;
+    height: 250px; 
+}
+*/
