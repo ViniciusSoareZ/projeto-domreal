@@ -3,9 +3,6 @@
 *{
     margin: 0px;
     padding: 0px;
-
-    
-    
 }
 a{
     text-decoration: none;
@@ -57,7 +54,7 @@ div.apresentacao{
 div#desc{
     text-align: center;
     font-weight: bold;
-    /* text-shadow: 2px 2px 0px black; */
+    text-shadow: 1px 1px 0px black;
     position: absolute;
     top: 20%;
     left: 47%;
@@ -108,6 +105,7 @@ section#telefone{
     height: 627px;
     width: 311px;
     
+    
 
     top: 50%;
     left: 20%;
@@ -118,6 +116,7 @@ section#telefone{
 }
 
 iframe#tela{
+    box-shadow: 30px 10px 50px rgb(0, 0, 0);
     position: relative;
     top: 15px;
     left: 16px;
@@ -142,7 +141,7 @@ iframe#tela{
 
     div#desc{
         text-align: center;
-        top: 23%;
+        top: 25%;
         left:50%;
         transform: translate(-50%, -50%);
     }
@@ -211,6 +210,11 @@ section.servicos > h1{
     
 }
 
+.avaliacao{
+    padding: 100px;
+
+}
+
 
 /* footer */
 footer{
@@ -225,12 +229,15 @@ section.infos{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;    
+    
+    
 
 }
 
 .container01{
-    margin-top: 50px;
+    margin: 50px 50px 0px 50px;
     position: relative;
+   
 }
 .icons{
     width: 20px;
@@ -255,7 +262,7 @@ section.infos{
 
 }
 .container02{
-    margin-top: 50px;
+    margin: 50px 50px 0px 50px;
     position: relative;
 }
 #loc1{
@@ -271,12 +278,13 @@ section.infos{
 
 }
 .container03{
-    margin-top: 50px;
+    margin: 50px 50px 0px 50px;
 }
 
 .container04{
-    margin-top: 50px;
-    position: relative
+    margin: 50px 50px 0px 50px;
+    position: relative;
+    
 }
 #loc4{
     position: absolute;
@@ -290,6 +298,7 @@ dt{
     font-weight: bold;
 }
 dd{
+    
     line-height: 30px;
     margin-left: 25px;
 }
@@ -353,16 +362,47 @@ dd:hover{
 .selos{
     width: 70px;
     height: 28px;
+    background-color: #5c7cb25d;
 }
 .container05{
-    margin-top: 50px;
+    margin: 50px 50px 0px 50px;
+    
+}
+.btn-footer{
+    font-weight: bold;
+    font-size: 0.9em;
+    text-transform: uppercase;
+   
+   
+    background-color:#5c7bb2;
+    color: var(--cor0);
+    margin-top: 10px;
+    
+    
+    padding: 10px 20px;
+    border: solid 2px var(--cor0) ;
+    border-radius: 10px;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+ .btn-footer:hover{
+    background-image: url(img/teste3.jpeg);
+    color: #254d93;
+    transform: scale(1.1);
+    cursor: pointer;
+
+} 
+.container06{
+    display: flex;
+    justify-content: center;
+    margin: 50px 50px 0px 50px;
 }
 
-.container06 > img{
-    width: 200px;
-    height:161.4px;
+#logofooter{
+    width: 100px;
+    height:80.7px;
+    margin-top: 100px;
 
-    text-align: center;
+    
 }
 #direitos{
     text-align: center;
