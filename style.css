@@ -198,7 +198,17 @@ section.servicos > h1{
     color: var(--cor2);
     padding: 100px;
 }
-
+.video-serv{
+    
+    border: 10px solid var(--cor3);
+    border-bottom: 80px solid var(--cor3); 
+    border-radius: 20px; 
+    margin-top: 50px;
+    
+    width: 320px;
+    height: 568px;
+    
+}
 
 /* footer */
 footer{
