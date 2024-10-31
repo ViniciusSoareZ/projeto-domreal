@@ -198,22 +198,6 @@ section.servicos > h1{
     color: var(--cor2);
     padding: 100px;
 }
-.video-serv{
-    
-    border: 10px solid var(--cor3);
-    border-bottom: 80px solid var(--cor3); 
-    border-radius: 20px; 
-    margin-top: 50px;
-    
-    width: 320px;
-    height: 568px;
-    
-}
-
-.avaliacao{
-    padding: 100px;
-
-}
 
 
 /* footer */
@@ -262,21 +246,27 @@ section.infos{
 
 }
 .container02{
+    min-width: 175px;
+    
     margin: 50px 50px 0px 50px;
     position: relative;
 }
 #loc1{
+    
     position: absolute;
     top: 36px;
-    right: 170px;
+    right: 150px;
 
 }
+
 #loc2{
     position: absolute;
     top: 66px;
-    right: 170px;
+    right: 150px;
 
 }
+
+    
 .container03{
     margin: 50px 50px 0px 50px;
 }
@@ -289,7 +279,7 @@ section.infos{
 #loc4{
     position: absolute;
     top: 33px;
-    right: 240px;
+    right: 180px;
 
 } 
 dt{
